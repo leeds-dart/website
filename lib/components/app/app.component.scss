@@ -24,11 +24,21 @@ nav {
     text-align:center;
     li {
       display:inline-block;
-      padding:1rem 0.75rem;
+
       a {
+        display:inline-block;
         text-transform: uppercase;
         text-decoration:none;
         color:#fff;
+        padding:1rem 0.75rem;
+
+        -webkit-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+
+        &.router-link-active {
+          background-color: darken($color-main, 5);
+        }
+
       }
     }
   }
