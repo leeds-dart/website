@@ -1,0 +1,49 @@
+$color-main : #00A5E9;
+$color-secondary : #5AE3D5;
+
+header {
+  background-color:#fff;
+  width:100%;
+  img.logo {
+    display:block;
+    max-width:15rem;
+    margin:0 auto;
+  }
+  h1 {
+    position:absolute;
+    opacity:0;
+  }
+}
+nav {
+  background-color: $color-main;
+  width:100%;
+  ul {
+    margin:0;
+    padding:0;
+    text-indent:0;
+    text-align:center;
+    li {
+      display:inline-block;
+      padding:1rem 1.5rem;
+      a {
+        text-transform: uppercase;
+        text-decoration:none;
+        color:#fff;
+      }
+    }
+  }
+}
+article {
+ padding:2rem;
+ margin:0 auto;
+ max-width:50rem;
+ font-family:'Roboto';
+}
+footer {
+  width:100%;
+  background-color:$color-secondary;
+  color:#fff;
+  text-align:center;
+  padding:1rem;
+  margin-top:2rem;
+}
