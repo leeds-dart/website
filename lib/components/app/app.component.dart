@@ -57,7 +57,6 @@ class AppComponent implements OnInit {
     int headerMaxHeight;
 
   ngOnInit () {
-    print ("on init");
 
     nav = document.querySelector('nav');
     app = document.querySelector('#app');
@@ -72,12 +71,10 @@ class AppComponent implements OnInit {
   }
 
   void uiResize ([Event e]) {
-
-      print ("on resize");
       app.style.minHeight = window.innerHeight.toString()+'px';
-
       uiScroll();
   }
+
   void uiScroll ([Event e]) {
 
       if (headerMaxHeight != null && window.scrollY > (headerMaxHeight -
@@ -86,8 +83,6 @@ class AppComponent implements OnInit {
       else
         app.classes.remove('fixed');
 
-
-      print ("on scroll "+window.scrollY.toString());
   }
 
 }

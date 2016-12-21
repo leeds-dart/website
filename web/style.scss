@@ -45,7 +45,7 @@ $color-main : #00A5E9;
 $color-secondary : #5AE3D5;
 
 body {
-  background-color:#f5f5f5;
+  background-color:darken($color-main, 35);
   font-family: 'Montserrat', Roboto, Helvetica, Arial, sans-serif;
   padding:0;
   margin:0;
@@ -55,10 +55,10 @@ body {
 p {
   font-weight:100;
   line-height: 1.6rem;
-  color:#444;
+  color:desaturate(lighten($color-main, 40),50);
 
     a {
-      color:#00A5E9;
+      color:lighten($color-main,10);
     }
 }
 h2,h3 {

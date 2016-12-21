@@ -5,12 +5,13 @@ environment:
   sdk: '>=1.19.0 <2.0.0'
 dependencies:
   angular2: 2.1.1
-  angular2_components: 0.2.0
+  angular2_components: ^0.2.0
   browser: ^0.10.0
   dart_to_js_script_rewriter: ^1.0.1
   http: ^0.11.3+3
-  sass: 0.4.2
+  sass: ^0.4.2
   crypto: ^2.0.0
+  jsonp: ^2.0.1
 transformers:
 - sass
 - angular2:
