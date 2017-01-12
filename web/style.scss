@@ -45,25 +45,32 @@ $color-main : #00A5E9;
 $color-secondary : #5AE3D5;
 
 body {
-  background-color:darken($color-main, 25);
+  background-color:desaturate(lighten($color-main, 51),43);
   font-family: 'Montserrat', Roboto, Helvetica, Arial, sans-serif;
   padding:0;
   margin:0;
   line-spacing: 1.6rem;
 }
 
+
+material-button.branded, material-fab.branded, material-fab.branded glyph {
+  background-color: $color-main !important;
+  color: white;
+}
+
+
 p {
   font-weight:100;
   line-height: 1.6rem;
-  color:desaturate(lighten($color-main, 45),50);
+  color:desaturate(darken($color-main, 20),20);
 
     a {
-      color:lighten($color-main,10);
+      color:saturate(darken($color-main,5), 30);
     }
 }
 h2,h3 {
   padding-top:1rem;
-  color:$color-secondary;
+  color:saturate(darken($color-secondary,25),20);
 }
 article h2:first-child {
   padding-top:0;

@@ -1,0 +1,35 @@
+
+$color-main : #00A5E9;
+$color-secondary : #5AE3D5;
+
+
+.events {
+  padding-top:1rem;
+}
+.event {
+  background-color:#fff;
+  padding:1rem;
+  margin-bottom:1rem;
+  display:block;
+  h3 {
+    color:#222;
+    padding-top:0;
+  }
+  p {
+    color:#555;
+  }
+  .event-footer {
+    display:flex;
+	  flex-direction: row;
+    padding-top:1rem;
+    .button, .when {
+      flex:1;
+    }
+    .when {
+      font-weight:bold;
+      padding-top:0.5rem;
+      color:darken($color-secondary, 20);
+    }
+  }
+
+}

@@ -6,9 +6,11 @@ import 'package:angular2/angular2.dart' show provide;
 import 'package:http/browser_client.dart';
 
 import 'package:leeds_dart/components/app/app.component.dart';
+import 'package:leeds_dart/services/eventbrite/eventbrite.service.dart';
 
 main() {
   bootstrap(AppComponent, <dynamic>[
     provide(BrowserClient, useValue: new BrowserClient()),
+    provide(EventbriteService, useClass: EventbriteService)
   ]);
 }
